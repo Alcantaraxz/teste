@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Portal do Aluno</title>
+</head>
+
+<body>
+    <header>
+        <h1>M-TECH - Portal do Estudante</h1>
+        <div class="barra-de-pesquisa">
+            <form action="https://www.google.com/search" method="get">
+                <label for="search">Buscar:</label>
+                <input type="text" id="search" name="q" placeholder="Digite sua pesquisa...">
+                <button id="enviar" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </header>
+
+    <aside>
+      
+        <div class="texto-imagem">
+            <img src="foto_perfil.jpg" alt="Foto de perfil">
+            <h4>Matheus</h4>
+            <p>Estudante</p>
+        </div>
+
+        <nav class="botao">
+            <ul>
+                <li><a href="#" data-target="perfil">Perfil</a></li>
+                <li><a href="#" data-target="tarefas">Tarefas e notas</a></li>
+                <li><a href="#" data-target="documentos">Documentos</a></li>
+                <li><a href="#" data-target="progresso">Progresso</a></li>
+                <li><a href="#" data-target="aulas">Aulas</a></li>
+                <li><a href="#" data-target="biblioteca">Biblioteca</a></li>
+                <li><a href="#" data-target="configurações">Configurações</a></li>
+
+                <button class="sairConta">
+                    <a href="index.html">Sair</a>
+                </button>
+
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="main-content">
+        <section id="perfil" class="content-section active">
+            <h2>Bem vindo ao seu perfil!</h2>
+            <div class="containerPerfil">       
+                <div class="caixas">
+                    
+                    <label for="name">Nome</label>
+                    <input type="text"  name="q" id="name" placeholder="Digite seu nome:">
+                    
+                    <label for="E-mail">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email:">
+                    
+                    <label for="name">Bio</label>
+                    <input type="text" name="text" id="text" placeholder="Digite mais sobre você:">
+
+                    <button>Salvar informações</button>
+                
+                </div>
+                <div class="img-perfil">
+                    <img src="foto_perfil.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="tarefas" class="content-section">
+            <h5>Tarefas e notas</h5>
+            <p>Lista de tarefas e notas do aluno.</p>
+
+            <table border>
+                <tr>
+                   <th>Python</th>
+                   <th>HTML</th>
+                   <th>CSS</th>
+                   <th>JavaScript</th>
+                </tr>
+
+                <tr>
+                    <td>4.8</td>
+                    <td>8.5</td>
+                    <td>9.0</td>
+                    <td>3.5</td>
+                </tr>
+            </table>
+            
+        </section>
+
+        <section id="documentos" class="content-section">
+            <h5>Documentos</h5>
+            <p>Seus documentos.</p>
+        </section>
+
+        <section id="progresso" class="content-section">
+            <h5>Progresso</h5>
+            <p>Visualize seu progresso acadêmico.</p>
+        </section>
+
+        <section id="aulas" class="content-section">
+            <h5>Aulas</h5>
+            <p>Lista de aulas e materiais.</p>
+        </section>
+        <section id="biblioteca" class="content-section">
+            <h5>Biblioteca</h5>
+            <p>Materiais necessários</p>
+        </section>
+        <section id="configurações" class="content-section">
+            <h5>Configurações</h5>
+            <p>Altere suas configurações</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="texto-rodape">@2024. Todos os direitos reservados ao programador.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

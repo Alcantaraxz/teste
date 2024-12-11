@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(87, 2, 87);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #c700c74b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.barra-de-pesquisa {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.barra-de-pesquisa label {
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.barra-de-pesquisa input {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 5px;
+  max-width: 200px;
+}
+
+.barra-de-pesquisa button {
+  background-color: black;
+  color: orange;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+aside {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 20px;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 12px;
+}
+
+aside img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.texto-imagem {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.texto-imagem h4 {
+  font-size: 20px;
+  color: rgb(92, 1, 92);
+  font-weight: bold;
+}
+
+.texto-imagem p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+main {
+  margin-left: 220px;
+  margin-top: 80px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: none;
+  width: 80%;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+section.active {
+  display: block;
+}
+#perfil h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #c700c74b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 240px;
+}
+
+footer .texto-rodape {
+  font-size: 14px;
+  margin-right: 200px;
+}
+
+.containerPerfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.img-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.containerPerfil img {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.caixas {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  gap: 8px;
+}
+
+.caixas input {
+  color: whitesmoke;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  width: 70%;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.568);
+}
+
+.containerPerfil button {
+  border: none;
+  background-color: orange;
+  color: #470247;
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sairConta {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sairConta:hover {
+  background-color: rgba(243, 182, 69, 0.678);
+}
+
+button.sairConta a {
+  text-decoration: none;
+  color: #610461;
+  font-size: 18px;
+}
+
+table{
+  padding: 10px;
+  border: none;
+}
+
+table tr{
+  color: #fff;
+}
